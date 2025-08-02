@@ -1,0 +1,45 @@
+# ===== 기본적으로 모든 파일 무시 =====
+**
+
+# ===== 필수 허용 =====
+!.gitignore
+!README.md
+
+# ===== client (UE5) =====
+!client/
+!client/Config/**
+!client/Content/**
+!client/Source/**
+!client/*.uproject
+
+# ===== game_server (Node.js 기반 메인 API 서버) =====
+!server/
+!server/game_server/
+!server/game_server/src/**
+!server/game_server/config/**
+!server/game_server/package.json
+!server/game_server/package-lock.json
+!server/game_server/tsconfig.json
+!server/game_server/*.js
+!server/game_server/*.ts
+!server/game_server/README.md
+
+# ===== ai_server (Python + FastAPI 기반 AI 서버) =====
+!server/ai_server/
+!server/ai_server/src/**
+!server/ai_server/*.py
+!server/ai_server/requirements.txt
+!server/ai_server/config.yaml
+!server/ai_server/README.md
+
+# ===== multi_server (TypeScript + Socket.IO 기반) =====
+!server/multi_server/
+!server/multi_server/src/**
+!server/multi_server/package.json
+!server/multi_server/package-lock.json
+!server/multi_server/tsconfig.json
+!server/multi_server/README.md
+
+# ===== 향후 확장 서버 예시 =====
+# !server/analytics_server/
+# !server/chatbot_server/
